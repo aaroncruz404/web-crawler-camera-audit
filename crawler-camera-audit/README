@@ -1,0 +1,26 @@
+Automated Camera Screenshot and Data Extraction
+
+Made by:
+Morales Zepeda Ivan Yultlanih
+Cruz Gallegos Ramses Aarón
+
+📜 Description
+This project automates the process of capturing screenshots and extracting camera names from an IP camera system on a local network, specifically designed for Hikvision. Using Playwright and ExcelJS, the script navigates the camera management page, performs the necessary actions to view the cameras, and then takes screenshots along with the names of each camera. The results are stored in an Excel file for easy camera management.
+
+Important Note: This project is designed for use only within a local network. The goal of this project helps me to automate a real-world task within my current job (Vallarta Plus IT department).  
+
+⚙️ Development tools
+Node.js
+Playwright: A library for interacting with web pages and automating browser actions.
+ExcelJS: A library used for generating and manipulating Excel files.
+Camera Access: The script connects to the cameras using IP addresses within a local network.
+
+📑 Script Flow
+Login: The script opens the camera web page and uses default credentials to log in.
+Interactions: It performs a series of clicks to show the cameras:
+Activates live view.
+Navigates between camera pages.
+Adjusts views to full screen.
+Screenshot Capture: After displaying the cameras, it takes a screenshot of each one.
+Data Extraction: The name of each camera is extracted from the interface.
+Excel Generation: The camera information, along with the screenshots, is saved in an Excel file.
